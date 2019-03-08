@@ -88,6 +88,42 @@ The last element of a RL system is a model to describe the environment. This str
 \paragraph{}
 There are other approaches to the reinforcement learning problem, such as the ones based on genetic algorithms and genetic programming, called evolutionary methods. These methods do not estimate a value function, they apply different policies to different instances of the environment and choose the one that yields more rewards. These approaches, however, does not take into consideration the effects of each action on the environment over time and ignore a lot of useful assumptions from RL problems, such as the states the agent passed through and the fact that the policy is actually a function. These assumptions sometimes make the search more efficient and accurate.
 
+\section{RL taxonomy}
+\paragraph{}
+Based on the above characteristics there are some specific RL types which can be defined according to the value or policy function definition:
+\begin{enumerate}
+    \item \textbf{Value based}:
+    \begin{itemize}
+        \item no or implicit policy
+        \item well defined value function
+    \end{itemize}
+    \item \textbf{Policy based}:
+    \begin{itemize}
+        \item well defined policy function
+        \item no or implicit value function
+    \end{itemize}
+    \item \textbf{Value based}:
+    \begin{itemize}
+        \item well defined policy function
+        \item well defined value function
+    \end{itemize}
+\end{enumerate}
+
+Also one can divide RL approaches according to the presence or not of a model:
+\begin{enumerate}
+    \item \textbf{Model free}:
+    \begin{itemize}
+        \item Policy and/or value function
+        \item No model
+    \end{itemize}
+    \item \textbf{Model based}:
+    \begin{itemize}
+        \item Policy and/or value function
+        \item Model
+    \end{itemize}
+\end{enumerate}
+
+
 \section{Conclusion}
 \paragraph{}
 As opposed to other types of learning, reinforcement learning is concearned with dynamic goal-oriented learning and decision making problems, and focuses on learning by iterating over an environment and measuring its states. This type of problems appear extensively in many fields and its study are of interest of many areas beyond engineering, such as neurosciences and psychology.
